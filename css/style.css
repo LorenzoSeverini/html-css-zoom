@@ -24,11 +24,6 @@ body{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
-.boxed{
-    max-width: 109.375rem;
-    margin: 0 auto;
-    min-height: 25rem;
-}
 
 .bg-white { background-color: white; }
 .bg-green { background-color: greenyellow; }
@@ -54,5 +49,34 @@ main {
     height: calc(100% - 10rem);
 }
 
+.boxed{
+    max-width: 109.375rem;
+    margin: 0 auto;
+    min-height: 46.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerImg {
+    width: calc((100% - (8px * 4)) / 5); 
+    height: calc((100% - (15px * 5)) / 7); 
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.containerImg > img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.containerImg > .nameUser {
+    position: absolute;
+}
 
 /**** ELEMENTI FOOTER ***/
+
+footer { 
+    position: fixed;
+    bottom: 0;
+}
