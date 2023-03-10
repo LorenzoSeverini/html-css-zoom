@@ -52,7 +52,6 @@ main {
 
 .containerImg {
     width: calc(100% / 7);
-    height: calc(100% / 5); 
     position: relative;
     border: .125rem solid black;
 }
