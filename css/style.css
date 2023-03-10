@@ -36,28 +36,32 @@ header > button {
 
 main {
     width: 100%;
-    height: calc(100vh - 10rem - 1.25rem)
+    height: calc(100vh - 10rem)
 }
 
 .boxed{
     max-width: 109.375rem;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
 }
 
 .containerImg {
-    width: calc(100% / 7 - .5rem);
-    height: calc(100% / 5 - .5rem); 
+    width: calc(100% / 7);
+    height: calc(100% / 5); 
     position: relative;
-    margin-bottom: .9375rem;
+    border: .125rem solid black;
 }
 
 .containerImg > img {
     width: 100%;
     height: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .containerImg > .nameUser {
